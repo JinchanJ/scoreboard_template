@@ -5,8 +5,9 @@ LoadEverything().then(() => {
   };
 
   Update = async (event) => {
-    const team1 = event.data.score[window.scoreboardNumber].team["1"];
-    const team2 = event.data.score[window.scoreboardNumber].team["2"];
+    const score = event.data.score[window.scoreboardNumber];
+    const team1 = score.team["1"];
+    const team2 = score.team["2"];
     const teams = [team1, team2];
     
     for (const [t, team] of teams.entries()) {
