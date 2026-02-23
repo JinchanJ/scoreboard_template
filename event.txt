@@ -1,0 +1,26 @@
+# event object represented as a tree w/ commonly used info
+event
+└─ data
+   ├─ tournamentInfo
+   │  └─ tournamentName                      (String)
+   └─ score
+      └─ [window.scoreboardNumber]                      # window.scoreboardNumber is set to 1 in globals.js
+         ├─ phase                            (String)
+         ├─ match                            (String)
+         ├─ best_of                          (Number)
+         ├─ best_of_text                     (String)   # e.g. "Best of 5" when best_of = 5, "" when best_of = 0
+         └─ team
+            └─ ["1"]                                    # Represents Team 1
+               ├─ score                      (Number)
+               ├─ losers                     (Boolean)
+               ├─ color                      (String)
+               └─ player
+                  └─ ["1"]
+                     ├─ seed                 (Number)
+                     ├─ name                 (String) 
+                     ├─ twitter              (String)   # No "@" attached to the front
+                     ├─ pronoun              (String)
+                     └─ team                 (String)   # This is the sponsor
+                     └─ country
+                        ├─ asset             (String)   # e.g. "./assets/country_flag/jp.png"
+                        └─ code              (String)   # e.g. "JP"
