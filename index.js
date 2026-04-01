@@ -18,10 +18,10 @@ LoadEverything().then(() => {
       const player = team.player["1"];
       
       if (player) {
-        // TODO: Insert code here
         
         // For team/player info:
         // SetInnerHtml($(`.p${t + 1}`), );
+        
       }
       
       if (team.color) {
