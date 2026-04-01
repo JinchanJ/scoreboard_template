@@ -9,6 +9,9 @@ LoadEverything().then(() => {
     const team1 = score.team["1"];
     const team2 = score.team["2"];
     const teams = [team1, team2];
+
+    // For tournament info:
+    // SetInnerHtml($(""), );
     
     for (const [t, team] of teams.entries()) {
       
@@ -19,9 +22,6 @@ LoadEverything().then(() => {
         
         // For team/player info:
         // SetInnerHtml($(`.p${t + 1}`), );
-        
-        // For tournament info:
-        // SetInnerHtml($(""), );
       }
       
       if (team.color) {
